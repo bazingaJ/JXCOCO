@@ -19,8 +19,9 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Jesse Enzo" => "yjingxu007@gmail.com" }
   spec.source       = { :git => "https://github.com/bazingaJ/JXCOCO.git", :tag => "#{spec.version}" }
-  spec.source_files  = "JXCOCO/JXButton/*"
+  spec.source_files  = "JXButton/*"
   spec.frameworks = 'UIKit'
   spec.requires_arc = true
+  spec.ios.deployment_target = '8.0'
 
 end
