@@ -8,20 +8,21 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "JXCOCO"
-  spec.version      = "0.0.1"
-  spec.summary      = "封装UIButton."
-  spec.description  = <<-DESC
-创建一个库，自己测试一下
+  spec.name         = "JXCOCO" #项目名
+  spec.version      = "0.0.1"  #相应的版本号 
+  spec.summary      = "封装UIButton2."  #简述
+  spec.description  = <<-DESC #详细描述
+			创建一个库，自己测试一下
                    DESC
 
-  spec.homepage     = "https://github.com/bazingaJ/JXCOCO"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author             = { "Jesse Enzo" => "yjingxu007@gmail.com" }
+  spec.homepage     = "https://github.com/bazingaJ/JXCOCO" #项目主页
+  spec.license      = { :type => "MIT", :file => "LICENSE" } #开源协议
+  spec.author             = { "Jesse Enzo" => "yjingxu007@gmail.com" } #作者
   spec.source       = { :git => "https://github.com/bazingaJ/JXCOCO.git", :tag => "#{spec.version}" }
-  spec.source_files  = "JXKit/*"
+  spec.source_files  = "JXKit/*.{h,m}"
   spec.frameworks = 'UIKit'
   spec.requires_arc = true
-  spec.ios.deployment_target = '8.0'
+  spec.ios.deployment_target = '9.0'
   spec.dependency 'Masonry'
+  spec.public_header_files = 'JXKit/JXKit.h'   #需要对外开放的头文件
 end

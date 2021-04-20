@@ -10,7 +10,6 @@
 #define JXKit_h
 
 #import "AppMacros.h"
-#import "CacheMacros.h"
 #import "JXButton.h"
 #import "JXTextView.h"
 #import "JXView.h.h"
