@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/bazingaJ/JXCOCO.git", :tag => "#{s.version}" }
 
   # 源库资料文件    
-  s.source_files  = 'JXKit/*.{h,m}'
+  s.source_files  = 'JXKit'
 
   s.platform = :ios, "10.0"
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
   
   s.frameworks = 'UIKit'
   s.requires_arc = true
   
   s.dependency 'Masonry'
-  s.public_header_files = 'JXKit/JXKit.h'   #需要对外开放的头文件
+  s.public_header_files = 'JXKit.h'   #需要对外开放的头文件
 end
